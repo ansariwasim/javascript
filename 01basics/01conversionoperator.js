@@ -22,5 +22,36 @@ let valueInNumber = Number(score);
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++
+
+// two type of memory in javascript
+
+// 1. stack memory  
+// 2. heap memory  
+
+//  stack (primitive) , Heap (Non-Primitive)
+
+
+let myYoutubename = "codewithwasim";
+
+let anothername = myYoutubename;
+anothername = "wasim ansari"
+
+console.log(anothername);
+console.log(myYoutubename);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "wasim@gmail.com";
+console.log(userOne.email)
+console.log(userTwo.email);
+
